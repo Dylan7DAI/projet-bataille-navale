@@ -1,7 +1,30 @@
+# --- Python 项目常用忽略 ---
+
+# python cache
 __pycache__/
+*.py[cod]
 
-test_grille.py
+# 虚拟环境（venv/.venv）
+venv/
+.venv/
 
-test_bateau.py
+# pytest 临时文件
+.cache/
+.pytest_cache/
 
+# jupyter 文件（如果你用）
+.ipynb_checkpoints/
+
+# --- 编辑器和系统文件 ---
 .vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- 本项目相关临时文件 ---
+# 战舰游戏可以忽略测试生成的图像或临时文件
+*.tmp
+*.bak
+*.swp
+*.log
+
