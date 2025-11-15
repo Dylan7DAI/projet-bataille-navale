@@ -28,3 +28,7 @@ Thumbs.db
 *.swp
 *.log
 
+test_bateau.py
+
+test_grille.py
+
