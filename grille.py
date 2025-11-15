@@ -5,8 +5,8 @@ class Grille:
         """Créer une grille remplie de '.' """
         self.n_lignes = n_lignes
         self.n_colonnes = n_colonnes
-        self.vide = "."
-        self.rate = "o"   # tir dans l'eau
+        self.vide = '.'
+        self.tir = 'x'   # tir dans l'eau
 
         # matrice stockée dans une liste simple
         self.matrice = [self.vide] * (n_lignes * n_colonnes)
@@ -26,4 +26,15 @@ class Grille:
     def tirer(self, x: int, y: int):
         """Tire sur la case (x, y). Pour l’instant : toujours raté."""
         i = self.index(x, y)
-        self.matrice[i] = self.rate
+        self.matrice[i] = self.tir
+
+    
+    def __str__(self):
+        lignes = []
+        for l in range(self.n_lignes):
+            début = l * self.n_colonnes
+            fin = début + self.n_colonnes
+            ligne = "".join(self.matrice[début:fin])
+            lignes.append(ligne)
+        return "\n".join(lignes)
+
