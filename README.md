@@ -111,4 +111,8 @@ Bravo ! Vous avez coulé tous les bateaux en 35 coups.
 
 ```
 
-Finalement, bon jeu!
+##  Auteur / 作者
+Huichen DAI
+
+
+# Finalement, bon jeu!
